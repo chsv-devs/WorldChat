@@ -1,0 +1,10 @@
+name: WorldChat
+main: org.chocoserver.worldchat.WorldChat
+author: Hancho
+api: [1.0.0]
+version: 1.0.0
+
+permissions:
+  worldchat.bypass:
+    default: false
+    description: Allow chating to all players

@@ -21,6 +21,8 @@ public class WorldChat extends PluginBase implements Listener {
         Player player = ev.getPlayer();
         Level level = player.getLevel();
 
+        if(player.hasPermission("worldchat.bypass")) return;
+
         HashSet<CommandSender> recipients = new HashSet<>();
         for (CommandSender recipient : ev.getRecipients()) {
             if(recipient instanceof Player && ((Player) recipient).getLevel().equals(level)){
